@@ -19,7 +19,8 @@
     title = __('tags')+' : ' + page.tag;
   }
   %>
-    <title><% if (title){ %><%= title %> | <% } %><%= config.title %></title>
+    <title><% if (title){ %><%= title %> - <% } %><%= config.title %></title>
+    <!--  <meta name="robots" content="nofollow" /> -->
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     <% if (config.author){ %>
     <meta name="author" content="<%= config.author %>">
@@ -39,4 +40,12 @@
     <link rel="apple-touch-icon-precomposed" href="<%- config.root %><%- theme.apple_icon %>">
     <% } %>
     <%- css('css/style') %>
+<!-- </script> -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({
+        google_ad_client: "ca-pub-5819327586326271",
+        enable_page_level_ads: true
+      });
+    </script>
 </head>

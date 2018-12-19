@@ -1,8 +1,8 @@
 ##### Menu
 menu:
-  首页: /
-  归档: /archives
-  关于: /about
+  Home: /
+  Archives: /archives
+  # About: /about
 
 ## you can create `tags` and `categories` folders in `../source`.
 ## And create a `index.md` file in each of them.
@@ -12,14 +12,17 @@ menu:
 ## ---
 
 #### Widgets
-widgets:
-- sponsor 
+widgets: 
 - category
+#- rss
 - weixin
-- rss
-## - weibo
-## - tag
-## - github-card
+#- weibo
+#- tag
+#- github-card
+#- links
+#### 临时替代图片
+#- douban
+#- weibo
   ## provide eight widgets:github-card,category,tag,rss,archive,tagcloud,links,weibo
 
 #### RSS 
@@ -36,7 +39,7 @@ banner_img: ## img/banner.jpg ## size:1920px*200px+. Banner Picture
 ### Theme Color 
 theme_color:
     theme: '#2ca6cb'    ##the defaut theme color is blue
-
+      # theme: '#13454A'
 # 代码高亮主题
 # available: default | night
 highlight_theme: night
@@ -74,20 +77,20 @@ creative_commons: none
 #### Toc
 toc:
   article: true   ## show contents in article.
-  aside: false     ## show contents in aside.
+  aside: true     ## show contents in aside.
 ## you can set both of the value to true of neither of them.
 ## if you don't want display contents in a specified post,you can modify `front-matter` and add `toc: false`.
 
 #### Links
 # links:
-#  码农圈: https://coderq.com,一个面向程序员交流分享的新一代社区
+#	巧哥: http://caoyudong.com/,一个面向程序员交流分享的新一代社区
 #  Jark's Blog: http://wuchong.me
 
 
 
 #### Comment
-duoshuo_shortname:    ## e.g. wuchong   your duoshuo short name.
-disqus_shortname:     ## e.g. wuchong   your disqus short name.
+# duoshuo_shortname: 小锅   ## e.g. wuchong   your duoshuo short name.
+# disqus_shortname:     ## e.g. wuchong   your disqus short name.
 
 #### Share button
 jiathis:
@@ -97,18 +100,19 @@ jiathis:
 
 #### Analytics
 google_analytics:
-  enable: true
-  id: UA-28029597-1     ## e.g. UA-46321946-2 your google analytics ID.
-  site:      ## e.g. wuchong.me your google analytics site or set the value as auto.
+  enable: true 
+  id: UA-79883090-2     ## e.g. UA-79883090-1(devhitao.com) your google analytics ID. UA-79883090-2(blog.devhitao.com)
+  site: blog.devhitao.com     ## e.g. wuchong.me your google analytics site or set the value as auto.
 ## You MUST upgrade to Universal Analytics first!
 ## https://developers.google.com/analytics/devguides/collection/upgrade/?hl=zh_CN
 baidu_tongji:
-  enable: false
-  sitecode: e6d1f421bbc9962127a50488f9ed37d1 ## e.g. e6d1f421bbc9962127a50488f9ed37d1 your baidu tongji site code
+  enable: true
+  sitecode: 6f3ed6f7016660f2922ad49dcee905e3 
+  ## e.g. e6d1f421bbc9962127a50488f9ed37d1 your baidu tongji site code
 
 cnzz_tongji:
   enable: false
-  siteid:    ## e.g. 1253575964 your cnzz tongji site id
+  siteid: 1261101034   ## e.g. 1253575964 your cnzz tongji site id
 
 #### Miscellaneous
 ShowCustomFont: false  ## you can change custom font in `variable.styl` and `font.styl` which in the theme folder `/jacman/source/css`.
